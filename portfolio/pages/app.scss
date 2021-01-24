@@ -1,0 +1,23 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import './index.scss';
+
+@font-face {
+    font-family: "Kiona";
+    src: url("/fonts/Kiona/Kiona-Regular.ttf") format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("/fonts/Metropolis/Metropolis-Black.otf") format('opentype');
+    font-display: swap;
+}
+
+h1 {
+    font-family: "Metropolis";
+}
