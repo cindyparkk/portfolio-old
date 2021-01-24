@@ -1,16 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+    width: 100%;
+    min-height: 150px;
+    background-color: #272834;
+    position: fixed;
+    bottom: 0;
+`;
 
-const Menu = ({}) => {
+const Footer = ({}) => {
     return <Container>
 
     </Container>
 }
 
-Menu.defaultProps = {
+Footer.defaultProps = {
 
 };
 
-export default Menu;
+export default Footer;
