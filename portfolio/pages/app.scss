@@ -18,6 +18,16 @@
     font-display: swap;
 }
 
+body, html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
 h1 {
     font-family: "Metropolis";
+}
+
+h2 {
+    font-family: "Kiona";
 }

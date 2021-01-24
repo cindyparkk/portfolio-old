@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
+import Menu from "comps/Menu";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             crossOrigin=""
           />
       </Head>
-      <h1>hi</h1>
+      <Menu />
 
       {/* <main className={styles.main}>
         <h1>hello</h1>
