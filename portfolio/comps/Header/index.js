@@ -24,7 +24,7 @@ const Logo = styled.img`
 `;
 
 const MenuItem = styled.h2`
-    margin: 0px 3%;
+    margin: 0px 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,13 +33,17 @@ const MenuItem = styled.h2`
 const Icon = styled.img`
     max-width: 20px;
     height: auto;
-    padding: 5px 0px 0px 10px;
+    margin: 5px 20px 0px 10px;
 `;
 
 const Expand = styled.div`
     // box-shadow: 0 5px 5px -5px #333,
     //             -5px 0 5px -5px #333, 
     //             5px 0 5px -5px #333;
+    max-width: 190px;
+    min-height: 216px;
+    background-color: #fff;
+    box-shadow: 0px 4px 25px 2px rgba(0, 0, 0, 0.2);
 `;
 
 const Header = ({}) => {
