@@ -1,6 +1,8 @@
+import React, {useEffect} from 'react';
 import Head from 'next/head'
 import Header from "comps/Header";
 import Footer from "comps/Footer";
+import Title from "comps/Title";
 
 // window.onscroll = function() {scrollFunction()};
 
@@ -12,6 +14,35 @@ import Footer from "comps/Footer";
 // }
 
 export default function Home() {
+  // var i = 0;
+  // var text = "Hi, I'm Cindy,";
+
+  // function typeWriter() {
+  //   if (i < text.length) {
+  //     document.getElementById("title").innerHTML += text.charAt(i);
+  //     i++;
+  //     setTimeout(typeWriter, 100);
+  //   } 
+  // }
+
+  // useEffect(()=>{
+  //   typeWriter();
+  // }, []);
+
+  // var x= 0;
+  // var text2 = "I code and design."
+
+  // function typeWriter2(){
+  //   if (x < text2.length) {
+  //     document.getElementById("title2").innerHTML += text2.charAt(x);
+  //     x++;
+  //     setTimeout(typeWriter2, 100);
+  //   } 
+  // }
+
+  // setTimeout(()=>{
+  //   typeWriter2();
+  // }, 2000);
 
   return (
     <div className="page">
@@ -30,8 +61,9 @@ export default function Home() {
           />
       </Head>
       <Header id="header"/>
-      <div>
-        <h1>Hi, I'm Cindy,<br/>I code and design.</h1>
+      <div className="page_title">
+        <h1 id="title"></h1>
+        <h1 id="title2"></h1>
       </div>
       <Footer />
     </div>
