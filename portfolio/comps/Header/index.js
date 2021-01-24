@@ -5,9 +5,12 @@ const Container = styled.div`
     width: 100%;
     min-height: 100px;
     background-color: #fff;
-    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    transition: 0.2s;
 `;
 
 const MenuLogo = styled.div`
@@ -33,9 +36,13 @@ const Icon = styled.img`
     padding: 5px 0px 0px 10px;
 `;
 
-const Expand = styled.div``;
+const Expand = styled.div`
+    // box-shadow: 0 5px 5px -5px #333,
+    //             -5px 0 5px -5px #333, 
+    //             5px 0 5px -5px #333;
+`;
 
-const Menu = ({}) => {
+const Header = ({}) => {
     return <Container>
         <MenuLogo>
             <Logo src="/logo.svg" />
@@ -46,8 +53,8 @@ const Menu = ({}) => {
     </Container>
 }
 
-Menu.defaultProps = {
+Header.defaultProps = {
 
 };
 
-export default Menu;
+export default Header;
