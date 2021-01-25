@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from "comps/Header";
 import Footer from "comps/Footer";
 import HomeInfo from "comps/HomeInfo";
+import Title from "comps/Title";
 
 import Router from 'next/router';
 
@@ -61,18 +62,20 @@ export default function Home() {
   return (
     <div className="page">
       <Head>
-      <link
-            rel="preload"
-            href="/fonts/Kiona/Kiona-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/Metropolis/Metropolis-Black.oft"
-            as="font"
-            crossOrigin=""
-          />
+        <title>Cindy Park | Portfolio</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/logo.svg"></link>
+        <link
+              rel="preload"
+              href="/fonts/Kiona/Kiona-Regular.ttf"
+              as="font"
+              crossOrigin=""
+            />
+            <link
+              rel="preload"
+              href="/fonts/Metropolis/Metropolis-Black.oft"
+              as="font"
+              crossOrigin=""
+            />
       </Head>
       <Header id="header" 
       onAbout={clicktoAbout} onContact={clicktoContact}
@@ -82,7 +85,8 @@ export default function Home() {
         <h1 id="title2"></h1>
       </div>
       <HomeInfo />
-      <HomeInfo />
+      <HomeInfo bgcolor="#8093F1" title="Adog'pt"/>
+      <HomeInfo bgcolor="#F28482" title="medTrack"/>
       <Footer />
     </div>
   )
