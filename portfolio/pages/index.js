@@ -2,7 +2,9 @@ import React, {useEffect} from 'react';
 import Head from 'next/head'
 import Header from "comps/Header";
 import Footer from "comps/Footer";
-import Title from "comps/Title";
+import HomeInfo from "comps/HomeInfo";
+
+import Router from 'next/router';
 
 // window.onscroll = function() {scrollFunction()};
 
@@ -12,6 +14,18 @@ import Title from "comps/Title";
 //       document.getElementById("header").style.boxShadow = "0 0 0.5em rgba(0, 0, 0, 0.5)";
 //     } else document.getElementById("header").style.boxShadow = "0px"
 // }
+
+function clicktoAbout() {
+  if (true){
+    Router.push("/about");
+  }
+}
+
+function clicktoContact() {
+  if (true){
+    Router.push("/contact");
+  }
+}
 
 export default function Home() {
   // var i = 0;
@@ -60,11 +74,15 @@ export default function Home() {
             crossOrigin=""
           />
       </Head>
-      <Header id="header"/>
+      <Header id="header" 
+      onAbout={clicktoAbout} onContact={clicktoContact}
+      />
       <div className="page_title">
         <h1 id="title"></h1>
         <h1 id="title2"></h1>
       </div>
+      <HomeInfo />
+      <HomeInfo />
       <Footer />
     </div>
   )

@@ -28,6 +28,7 @@ const MenuItem = styled.h2`
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 `;
 
 const Icon = styled.img`
@@ -46,19 +47,20 @@ const Expand = styled.div`
     box-shadow: 0px 4px 25px 2px rgba(0, 0, 0, 0.2);
 `;
 
-const Header = ({}) => {
+const Header = ({onAbout, onContact}) => {
     return <Container>
         <MenuLogo>
             <Logo src="/logo.svg" />
         </MenuLogo>
         <MenuItem>work<Icon src="/down.svg"/></MenuItem>
-        <MenuItem>about</MenuItem>
-        <MenuItem>contact</MenuItem>
+        <MenuItem onClick={onAbout}>about</MenuItem>
+        <MenuItem onClick={onContact}>contact</MenuItem>
     </Container>
 }
 
 Header.defaultProps = {
-
+    onAbout:()=>{},
+    onContact:()=>{}
 };
 
 export default Header;
