@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    width: 70%;
+    min-width: 70%;
     min-height: 320px;
     display: flex;
     background-color: ${props=>props.bgcolor ? props.bgcolor : "#C197D4"};
     align-items: center;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     padding:0px 2% 0px 2%;
+    margin-top: 2%;
 `;
 
 const InfoImage = styled.img``;
